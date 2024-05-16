@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1.contract-title Contrato #{contrato._id}
+
+  table.contract-table.w3-table.w3-striped.w3-border(style='border-collapse: collapse; width: 100%;')
+    tr
+      td.contract-cell(style='padding: 8px; border: 1px solid #ddd;') #{contrato.tipoprocedimento}
+      td.contract-cell(style='padding: 8px; border: 1px solid #ddd;') #{contrato.objectoContrato}
+      td.contract-cell(style='padding: 8px; border: 1px solid #ddd;') #{contrato.dataPublicacao}
+      td.contract-cell(style='padding: 8px; border: 1px solid #ddd;') #{contrato.dataCelebracaoContrato}
+      td.contract-cell(style='padding: 8px; border: 1px solid #ddd;') #{contrato.precoContratual}
+      td.contract-cell(style='padding: 8px; border: 1px solid #ddd;') #{contrato.prazoExecucao}
+      td.contract-cell(style='padding: 8px; border: 1px solid #ddd;') #{contrato.NIPC_entidade_comunicante}
+      td.contract-cell(style='padding: 8px; border: 1px solid #ddd;') #{contrato.entidade_comunicante}
+      td.contract-cell(style='padding: 8px; border: 1px solid #ddd;') #{contrato.fundamentacao}
+
+  a(href="/") Voltar à página principal

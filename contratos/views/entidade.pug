@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1 Entidade #{contrato.NIPC}
+
+  table.w3-table.w3-striped.w3-border(style='border-collapse: collapse; width: 100%;')
+    tr
+      th(style='padding: 8px; border: 1px solid #ddd;') NIPC
+      th(style='padding: 8px; border: 1px solid #ddd;') Nome
+    tr
+      td.contract-cell(style='padding: 8px; border: 1px solid #ddd;') #{contrato.NIPC_entidade_comunicante}
+      td.contract-cell(style='padding: 8px; border: 1px solid #ddd;') #{contrato.entidade_comunicante}
+  a(href="/entidades") Voltar à lista de entidades
